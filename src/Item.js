@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import SelectedCart from "./selectedCart";
 const Item = () => {
   const [data, setData] = useState([]);
   const [btn, setBtn] = useState({});
@@ -91,12 +91,15 @@ const Item = () => {
             </li>
           ))}
         </ul>
-        <div className="card">
+        {/* <div className="card">
           <div className="card-body">
             <div className="card-title">Your Cart() </div>
             <div className="card-text"></div>
           </div>
-        </div>
+        </div> */}
+      </div>
+      <div>
+        <SelectedCart cartItems={btn} content={data} />
       </div>
     </>
   );
