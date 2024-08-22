@@ -77,17 +77,17 @@ const Item = () => {
 
   return (
     <>
-      <div className="card">
+      <div>
         <ul>
           {data.map((item, index) => (
-            <li key={index}>
-              <img src={item.image.desktop} alt="an img" />
+            <li className="card" key={index}>
+              <img src={item.image.thumbnail} alt="an img" />
 
               <div>{handleBtn(index)}</div>
 
-              <h3>{item.category}</h3>
-              <h2>{item.name}</h2>
-              <h1>${item.price}</h1>
+              <p>{item.category}</p>
+              <h5>{item.name}</h5>
+              <p>${item.price}</p>
             </li>
           ))}
         </ul>
