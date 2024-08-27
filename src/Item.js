@@ -77,11 +77,11 @@ const Item = () => {
 
   return (
     <>
-      <div>
+      <div className="allcards">
         <ul>
           {data.map((item, index) => (
             <li className="card" key={index}>
-              <img src={item.image.thumbnail} alt="an img" />
+              <img src={item.image.desktop} alt="an img" />
 
               <div>{handleBtn(index)}</div>
 
@@ -98,7 +98,7 @@ const Item = () => {
           </div>
         </div> */}
       </div>
-      <div>
+      <div className="selectedcart">
         <SelectedCart cartItems={btn} content={data} />
       </div>
     </>
