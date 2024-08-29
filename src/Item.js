@@ -22,7 +22,7 @@ const Item = () => {
   };
   const handleBtn = (index) => {
     return btn[index] > 0 ? (
-      <button className="incbtn">
+      <button className="button">
         <span onClick={() => handleDec(index)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ const Item = () => {
         </svg>
       </button>
     ) : (
-      <button onClick={() => handleClick(index)}>
+      <button className="button" onClick={() => handleClick(index)}>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
