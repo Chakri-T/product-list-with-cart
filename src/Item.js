@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import SelectedCart from "./selectedCart";
+import EmptyCart from "./emptyCart";
 const Item = () => {
   const [data, setData] = useState([]);
   const [btn, setBtn] = useState({});
-
+  const len = Object.keys(btn).length;
+  console.log(len);
   useEffect(() => {
     fetch("/data.json")
       .then((response) => response.json())
@@ -75,6 +77,12 @@ const Item = () => {
     );
   };
 
+  for (const key in btn) {
+    if (btn[key] === 0) {
+      delete btn[key];
+    }
+  }
+
   return (
     <>
       <div className="allcards">
@@ -98,8 +106,12 @@ const Item = () => {
           </div>
         </div> */}
       </div>
-      <div className="selectedcart">
-        <SelectedCart cartItems={btn} content={data} />
+      <div className="cart">
+        {len > 0 ? (
+          <SelectedCart cartItems={btn} content={data} />
+        ) : (
+          <EmptyCart />
+        )}
       </div>
     </>
   );
