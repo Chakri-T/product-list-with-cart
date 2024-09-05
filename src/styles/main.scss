@@ -18,7 +18,7 @@ ul {
 img {
   width: 100%;
   height: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 
 .card {
@@ -33,28 +33,47 @@ img {
   justify-content: center;
   // position: relative;
 }
-svg {
-  align-self: center;
-  padding: 3px;
-  color: blue;
-}
 .firstButton {
   position: absolute;
-  top: 65%;
+  top: 62%;
   left: 26%;
+  width: 50%;
   border-radius: 18px;
   padding: 5px 15px 5px;
-  color: hsl(12, 20%, 44%);
+  color: hsl(14, 86%, 42%);
   // transform: translate(-50%, -50%);
 }
 .secondButton {
   position: absolute;
-  top: 65%;
+  top: 62%;
   left: 26%;
+  width: 50%;
   border-radius: 18px;
   padding: 5px 15px 5px;
-  background-color: hsl(12, 20%, 44%);
+  background-color: hsl(14, 86%, 42%);
   color: white;
+}
+.decSvg {
+  width: 13px;
+  height: 13px;
+  float: left;
+  margin-top: 7px;
+  border: 0.5px solid white; /* Border color and width */
+  border-radius: 50%; /* Makes the border round */
+  overflow: visible;
+  box-sizing: border-box;
+  padding: 1px;
+}
+.incSvg {
+  width: 13px;
+  height: 13px;
+  float: right;
+  margin-top: 7px;
+  border: 0.5px solid white; /* Border color and width */
+  border-radius: 50%; /* Makes the border round */
+  overflow: visible;
+  box-sizing: border-box;
+  padding: 1px;
 }
 .item-details {
   padding-top: 5px;

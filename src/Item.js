@@ -27,6 +27,7 @@ const Item = () => {
       <button className="secondButton">
         <span onClick={() => handleDec(index)}>
           <svg
+            className="decSvg"
             xmlns="http://www.w3.org/2000/svg"
             width="10"
             height="2"
@@ -38,6 +39,7 @@ const Item = () => {
         </span>
         {btn[index]}
         <svg
+          className="incSvg"
           onClick={() => handleClick(index)}
           xmlns="http://www.w3.org/2000/svg"
           width="10"
