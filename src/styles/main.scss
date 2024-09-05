@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 
+@media (max-width: 1400px) {
+  .button {
+    position: absolute;
+    top: 62%;
+    left: 30%;
+    // transform: translate(-50%, -50%);
+  }
+}
 .App {
   margin-top: 50px;
   font-family: "Red Hat Text", sans-serif;
@@ -18,6 +26,7 @@ ul {
 img {
   width: 100%;
   height: 100%;
+  padding-bottom: 5%;
 }
 .card {
   display: flex;
@@ -27,11 +36,13 @@ img {
   width: 30%;
   height: 30%;
   border-style: none;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 .button {
   position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 32%;
+  // transform: translate(-50%, -50%);
 }

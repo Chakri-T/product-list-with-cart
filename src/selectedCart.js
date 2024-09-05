@@ -58,9 +58,10 @@ const SelectedCart = (props) => {
                 )
             )}
           </ul>
-
-          <p>Order Total</p>
-          <h3>{total}</h3>
+          <div>
+            <p>Order Total</p>
+            <h3>{total}</h3>
+          </div>
 
           <p>
             <svg
