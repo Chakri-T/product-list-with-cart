@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 
-@media (max-width: 1400px) {
-  .button {
-    position: absolute;
-    top: 62%;
-    left: 30%;
-    // transform: translate(-50%, -50%);
-  }
-}
 .App {
   margin-top: 50px;
   font-family: "Red Hat Text", sans-serif;
@@ -28,21 +20,61 @@ img {
   height: 100%;
   padding-bottom: 5%;
 }
+
 .card {
   display: flex;
   float: left;
   flex-wrap: wrap;
   padding: 5px;
   width: 30%;
-  height: 30%;
+  height: 100%;
   border-style: none;
   align-items: center;
   justify-content: center;
-  position: relative;
+  // position: relative;
 }
-.button {
+svg {
+  align-self: center;
+  padding: 3px;
+  color: blue;
+}
+.firstButton {
   position: absolute;
   top: 65%;
-  left: 32%;
+  left: 26%;
+  border-radius: 18px;
+  padding: 5px 15px 5px;
+  color: hsl(12, 20%, 44%);
   // transform: translate(-50%, -50%);
+}
+.secondButton {
+  position: absolute;
+  top: 65%;
+  left: 26%;
+  border-radius: 18px;
+  padding: 5px 15px 5px;
+  background-color: hsl(12, 20%, 44%);
+  color: white;
+}
+.item-details {
+  padding-top: 5px;
+  float: left;
+  align-self: normal;
+}
+
+@media screen and (max-width: 1400px) {
+  .firstButton {
+    position: absolute;
+    top: 62%;
+    left: 26%;
+    // transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .firstButton {
+    position: absolute;
+    top: 58%;
+    left: 26%;
+    // transform: translate(-50%, -50%);
+  }
 }

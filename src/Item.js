@@ -24,7 +24,7 @@ const Item = () => {
   };
   const handleBtn = (index) => {
     return btn[index] > 0 ? (
-      <button className="button">
+      <button className="secondButton">
         <span onClick={() => handleDec(index)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const Item = () => {
         </svg>
       </button>
     ) : (
-      <button className="button" onClick={() => handleClick(index)}>
+      <button className="firstButton" onClick={() => handleClick(index)}>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,13 +89,18 @@ const Item = () => {
         <ul>
           {data.map((item, index) => (
             <li className="card" key={index}>
-              <img src={item.image.desktop} alt="an img" />
+              {window.innerWidth <= 768 ? (
+                <img src={item.image.tablet} alt="an img" />
+              ) : (
+                <img src={item.image.desktop} alt="an img" />
+              )}
 
               <div>{handleBtn(index)}</div>
-
-              <p>{item.category}</p>
-              <h5>{item.name}</h5>
-              <p>${item.price}</p>
+              <div className="item-details">
+                <p>{item.category}</p>
+                <h6>{item.name}</h6>
+                <p>${item.price}</p>
+              </div>
             </li>
           ))}
         </ul>
