@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Item from "./Item";
+import Item from "./components/Item";
 import "./styles/main.scss";
 function App() {
   return (

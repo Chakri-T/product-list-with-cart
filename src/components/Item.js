@@ -106,12 +106,6 @@ const Item = () => {
             </li>
           ))}
         </ul>
-        {/* <div className="card">
-          <div className="card-body">
-            <div className="card-title">Your Cart() </div>
-            <div className="card-text"></div>
-          </div>
-        </div> */}
       </div>
       <div className="cart">
         {len > 0 ? (
